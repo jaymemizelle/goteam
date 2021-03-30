@@ -1,7 +1,7 @@
 import React from "react";
 import "./team.css";
 import Card from "../Card/Card";
-import teamMembers from "../../utils/TeamAPI";
+import teamMembers from "../utils/TeamAPI";
 import { useState, useEffect } from "react";
 
 
