@@ -1,5 +1,8 @@
 import React from "react";
 import "./home.css";
+import teamMembers from "../../utils/TeamAPI";
+
+teamMembers();
 
 function Home() {
   return (
