@@ -28,7 +28,9 @@ Simply click on the link to the deployed application to browse teammates and beg
 * Node Js 
 * React.js 
 * CSS3/Sass/Scss 
-* Bootstrap/Bootstrap-React 
+* Bootstrap/Bootstrap-React
+* Axios
+* Random User generator API
 
 ## License
 
