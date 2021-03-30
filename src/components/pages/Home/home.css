@@ -1,0 +1,46 @@
+.homeText {
+  margin: 20px 100px 20px 100px;
+  padding: 20px;
+}
+
+.homeTitle {
+  margin-bottom: 20px;
+}
+
+.bg {
+  position: relative;
+  background-image: url("https://content.thriveglobal.com/wp-content/uploads/2019/02/office-work.jpg?w=1550");
+  background-size: cover;
+  height: 650px;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+.layer {
+  background-color: rgba(8, 8, 8, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.goTeam {
+  font-size: 3.5rem;
+}
+
+.headerText {
+  text-shadow: 1px 1px 0px #0c0c0c;
+  text-align: center;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: large;
+  color: #fafbfc;
+  margin: 0;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=home.css.map */
