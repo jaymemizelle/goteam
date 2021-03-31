@@ -4,8 +4,6 @@ import teamMembers from "../../utils/TeamAPI";
 import TeamTable from "../../TeamTable";
 import Search from "../Search/Search"
 
-teamMembers();
-
 function Home() {
   return (
     <>
