@@ -4,12 +4,6 @@ import { Button, Form } from "react-bootstrap";
 import "./search.css";
 
 function Search() {
-  // const [puppyState, setPuppyState] = useState({
-  //   breedName: "",
-  // });
-
-  // const handleChange = (e) =>
-  //   setPuppyState({ ...puppyState, breedName: e.target.value });
 
   
   return (

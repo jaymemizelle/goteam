@@ -1,7 +1,8 @@
 import React from "react";
 import "./home.css";
 import teamMembers from "../../utils/TeamAPI";
-import TeamPane from "../../TeamPane";
+import TeamTable from "../../TeamTable";
+import Search from "../Search/Search"
 
 teamMembers();
 
@@ -45,6 +46,8 @@ function Home() {
           voluptas quod exercitationem fuga. Possimus quis earum veniam quasi
           aliquam eligendi, placeat qui corporis!
         </p>
+        <Search/>
+        <TeamTable/>
       </div>
     </>
   );

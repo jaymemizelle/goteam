@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-    async function teamMembers() {
+    async function getTeamMembers() {
 
       let res = await axios.get('https://randomuser.me/api/');
     
@@ -9,6 +9,5 @@ import axios from "axios";
       console.log(data);
     }
     
-teamMembers();
 
-export default teamMembers;
+export default getTeamMembers;
