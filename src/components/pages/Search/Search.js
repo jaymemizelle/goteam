@@ -7,20 +7,21 @@ function Search() {
 
   
   return (
-    <div>
+    <div id="search">
+      <h2 style={{textAlign: "center"}}>Search</h2>
       <Form.Group className="searchBox">
         <Form.Control
           size="lg"
           type="text"
           placeholder="Search for a Team Member!"
         />
-        <Button
+        <span><Button
           className="searchBtn"
           variant="primary"
           type="submit"
         >
           Search
-        </Button>
+        </Button></span>
       </Form.Group>
     </div>
   );

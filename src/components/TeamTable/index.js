@@ -17,6 +17,8 @@ function TeamTable() {
   console.log("team members: ", teamMembers);
 
   return (
+    <>
+    <h2 style={{textAlign: "center"}}>Team Members</h2>
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -32,6 +34,7 @@ function TeamTable() {
         ))}
       </tbody>
     </Table>
+    </>
   );
 }
 

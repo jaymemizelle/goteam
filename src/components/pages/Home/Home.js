@@ -18,7 +18,7 @@ function Home() {
       </div>
       <div className="homeText">
         <h2 className="homeTitle">Welcome to GoTeam!</h2>
-        <p>
+        <p className="instructions">
           View your teammates' non sensitive data in the table below and use the search bar to filter which teammates you'd like to see!
         </p>
         <Search/>

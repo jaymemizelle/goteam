@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-
+import { NavHashLink } from 'react-router-hash-link';
 
 function NavTabs() {
     const location = useLocation();
@@ -15,12 +15,7 @@ function NavTabs() {
         <li className="nav-item">
         </li>
         <li className="nav-item">
-          <Link
-            to="/search"
-            className={location.pathname === "/search" ? "nav-link active" : "nav-link"}
-          >
-            Search
-          </Link>
+          <NavHashLink className={location.pathname === "/#search" ? "nav-link active" : "nav-link"} smooth to="/search">Search</NavHashLink>
         </li>
         <li className="nav-item">
           <Link
