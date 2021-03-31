@@ -20,29 +20,33 @@ function TeamTable() {
     <Table striped bordered hover>
       <thead>
         <tr>
-          <th>#</th>
+          <th>Photo</th>
           <th>First Name</th>
           <th>Last Name</th>
-          <th>Username</th>
+          <th>Email</th>
         </tr>
       </thead>
       <tbody>
-        {teamMembers.map(({ name, email }) => (
-          <EmployeeRow name={name} email={email} />
+        {teamMembers.map(({ picture, name, email }) => (
+          <MemberRow picture={picture} name={name} email={email} />
         ))}
       </tbody>
     </Table>
   );
 }
 
-const EmployeeRow = ({ name, email }) => {
+const MemberRow = ({ picture, name, email }) => {
   return (
     <tr>
+      <td><img alt="team member" src={picture.thumbnail}/></td>
       <td>{name.first}</td>
       <td>{name.last}</td>
       <td>{email}</td>
     </tr>
   );
 };
+
+
+
 
 export default TeamTable;
