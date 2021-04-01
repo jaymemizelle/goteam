@@ -8,7 +8,7 @@ function Search() {
   
   return (
     <div id="search">
-      <h2 style={{textAlign: "center"}}>Search</h2>
+      <h2 className="searchTitle">Search</h2>
       <Form.Group className="searchBox">
         <Form.Control
           size="lg"

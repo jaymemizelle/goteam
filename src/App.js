@@ -5,7 +5,7 @@ import NavTabs from "./components/NavTabs/NavTabs";
 import Search from "./components/pages/Search/Search";
 import Contact from "./components/pages/Contact/Contact";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import {HashRouter, HashRoute} from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 
 function App() {
   return (

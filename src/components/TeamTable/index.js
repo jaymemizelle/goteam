@@ -7,7 +7,7 @@ function TeamTable() {
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
-    fetch("https://randomuser.me/api/?results=10")
+    fetch("https://randomuser.me/api/?results=50")
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
@@ -18,7 +18,7 @@ function TeamTable() {
 
   return (
     <>
-    <h2 style={{textAlign: "center"}}>Team Members</h2>
+    <h2 className="tableTitle">Team Members</h2>
     <Table striped bordered hover>
       <thead>
         <tr>
@@ -48,7 +48,6 @@ const MemberRow = ({ picture, name, email }) => {
     </tr>
   );
 };
-
 
 
 

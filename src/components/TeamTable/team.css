@@ -1,4 +1,10 @@
 body {
   margin: 0;
 }
+
+.tableTitle {
+  margin-top: 80px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 /*# sourceMappingURL=team.css.map */
