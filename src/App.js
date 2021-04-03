@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <div>
-        <HashLink to="/#search">Link to Hash Fragment</HashLink>
+        <HashLink to="/#search">Search</HashLink>
+        <HashLink to="/#contact">Contact</HashLink>
         <Home />
-        <Search />
         <Contact />
       </div>
     </Router>

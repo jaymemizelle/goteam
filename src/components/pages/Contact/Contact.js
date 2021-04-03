@@ -5,8 +5,11 @@ import "./contact.css";
 
 function Contact() {
   return (
-    <>
+    <div className="contactContainer">
       <Form className="contactForm">
+        <h2 className="contactTitle" id="contact">
+          Contact
+        </h2>
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -23,7 +26,7 @@ function Contact() {
           Submit
         </Button>
       </Form>
-    </>
+    </div>
   );
 }
 

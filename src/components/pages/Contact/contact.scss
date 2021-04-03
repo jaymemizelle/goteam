@@ -1,7 +1,19 @@
+.contactContainer {
+    background-color: rgba(8, 8, 8, 0.7);
+    width: 100%;
+    margin: 0;
+}
+
 .contactForm {
     padding: 20px;
     margin: 20px 500px 20px 500px;
     display: block;
     margin: 0 auto;
     width: 50%;
+    color: white
+}
+
+.contactTitle {
+    text-align: center;
+    color: white;
 }

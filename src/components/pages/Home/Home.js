@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./home.css";
 import TeamTable from "../../TeamTable";
 import Search from "../Search/Search"
 
 function Home() {
+  const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
       <div className="bg">
@@ -11,9 +12,6 @@ function Home() {
         <div className="headerText">
           <h1 className="goTeam">GoTeam</h1>
           <p>Build Connection. Organize Workflow. Optimize Team Management.</p>
-          {/* <Button className="viewWorkBtn" variant="light">
-            View My Work
-          </Button> */}
         </div>
       </div>
       <div className="homeText">
@@ -22,7 +20,7 @@ function Home() {
           View your teammates' non sensitive data in the table below and use the search bar to filter which teammates you'd like to see! Go ahead. Try searching by the first and last name of your teammate to see who comes up! Have fun and remember not to take life too seriously. It isn't permanent!
         </p>
         <Search/>
-        <TeamTable/>
+        <TeamTable searchTerm={searchTerm}/>
       </div>
     </>
   );
