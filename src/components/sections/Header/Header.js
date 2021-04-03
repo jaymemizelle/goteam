@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./home.css";
+import "./header.css";
 import TeamTable from "../../TeamTable";
 import Search from "../Search/Search"
 
-function Home() {
+function Header() {
   const [searchTerm, setSearchTerm] = useState("");
   return (
     <>
@@ -26,4 +26,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Header;
