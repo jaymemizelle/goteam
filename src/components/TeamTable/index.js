@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./team.css";
-// import getTeamMembers from "../utils/TeamAPI";
 import { Table } from "react-bootstrap";
 
-function TeamTable() {
+function TeamTable({ searchTerm }) {
   const [teamMembers, setTeamMembers] = useState([]);
 
   useEffect(() => {
@@ -14,41 +13,57 @@ function TeamTable() {
         setTeamMembers(res.results);
       });
   }, []);
-  console.log("team members: ", teamMembers);
 
   return (
     <>
-    <h2 className="tableTitle">Team Members</h2>
-    <Table striped bordered hover>
-      <thead>
-        <tr>
-          <th>Photo</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Email</th>
-        </tr>
-      </thead>
-      <tbody>
-        {teamMembers.map(({ picture, name, email }) => (
-          <MemberRow picture={picture} name={name} email={email} />
-        ))}
-      </tbody>
-    </Table>
+      <h2 className="tableTitle">Team Members</h2>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Photo</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Location</th>
+            <th>Timezone Offset</th>
+          </tr>
+        </thead>
+        <tbody>
+          {teamMembers
+            .filter(
+              (e) => !searchTerm || e.name.first.indexOf(searchTerm) !== -1
+            )
+            .map(({ picture, name, email, location, timezone }, i) => (
+              <MemberRow
+                i={i}
+                picture={picture}
+                name={name}
+                email={email}
+                location={location}
+                timezone={timezone}
+              />
+            ))}
+        </tbody>
+      </Table>
     </>
   );
 }
 
-const MemberRow = ({ picture, name, email }) => {
+const MemberRow = ({ i, picture, name, email, location, timezone }) => {
   return (
-    <tr>
-      <td><img alt="team member" src={picture.thumbnail}/></td>
+    <tr key={i}>
+      <td>{i}</td>
+      <td>
+        <img alt="team member" src={picture.thumbnail} />
+      </td>
       <td>{name.first}</td>
       <td>{name.last}</td>
       <td>{email}</td>
+      <td>{location.country}</td>
+      <td>{location.timezone.offset}</td>
     </tr>
   );
 };
-
-
 
 export default TeamTable;
