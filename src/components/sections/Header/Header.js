@@ -17,7 +17,7 @@ function Header() {
       <div className="homeText">
         <h2 className="homeTitle">Welcome to GoTeam!</h2>
         <p className="instructions">
-          View your teammates' non sensitive data in the table below and use the search bar to filter which teammates you'd like to see! Go ahead. Try searching by the first and last name of your teammate to see who comes up! Have fun and remember not to take life too seriously. It isn't permanent!
+          View your teammates' non sensitive data in the table below and use the search bar to filter which teammates you'd like to see! Go ahead. Try searching by the first name or last name of your teammates, or even search by their location to see who comes up! Have fun and remember not to take life too seriously. It isn't permanent!
         </p>
         <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
         <TeamTable searchTerm={searchTerm}/>
