@@ -3,7 +3,7 @@
 # GoTeam
 
 ## Description
-This is a responsive web application built with JavaScript/Node JS and React.js. Built to be a valuable asset to any workflow, this app allows the user to search and organize their team member's information for quick access. Brush up on your teammates before your meetings to enhance connection at work and stay attuned to your team members' interests. Creating a pleasant work environment has never been so easy. GoTeam!
+This is a responsive web application built with JavaScript/Node JS and React.js. Built to be a valuable asset to any workflow, this app allows the user to search for teammates by first and last name or by their location. Accessing your teammates in one simple, intuitive UI has never been so easy. GoTeam!
 
 ## Table of Contents
   - [Installation](#installation)
@@ -19,9 +19,12 @@ This is a responsive web application built with JavaScript/Node JS and React.js.
 ``` npm i ```
 
 ## Usage
-Simply click on the link to the deployed application to browse teammates and begin building your team today!
+Simply click on the link to the deployed application to search for teammates by first and last name or by their location!
 
-![application-screenshot](./public/goTeam-screenshot.jpg
+![application-screenshot](./public/goTeam-screenshot.jpg)
+
+## Deployment
+* Deployed Application URL: https://jaymemizelle.github.io/goteam/
 
 ## Technologies
 * JavaScript 
@@ -31,6 +34,7 @@ Simply click on the link to the deployed application to browse teammates and beg
 * Bootstrap/Bootstrap-React
 * Axios
 * Random User generator API
+* gh-pages
 
 ## License
 
@@ -42,6 +46,7 @@ Simply click on the link to the deployed application to browse teammates and beg
 
 
 ## Next Steps
+* Restructure components for increased readability
 * Add new features for adding and removing teammates from a database and allow each user to login
 
 ## Questions
