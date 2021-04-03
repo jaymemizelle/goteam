@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/goteam/static/css/main.2dcef1bb.chunk.css",
+    "main.js": "/goteam/static/js/main.2d6c8750.chunk.js",
+    "main.js.map": "/goteam/static/js/main.2d6c8750.chunk.js.map",
+    "runtime-main.js": "/goteam/static/js/runtime-main.4cf49e28.js",
+    "runtime-main.js.map": "/goteam/static/js/runtime-main.4cf49e28.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/goteam/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4363574c.chunk.js": "/goteam/static/js/2.4363574c.chunk.js",
+    "static/js/2.4363574c.chunk.js.map": "/goteam/static/js/2.4363574c.chunk.js.map",
+    "static/js/3.d7b17785.chunk.js": "/goteam/static/js/3.d7b17785.chunk.js",
+    "static/js/3.d7b17785.chunk.js.map": "/goteam/static/js/3.d7b17785.chunk.js.map",
+    "index.html": "/goteam/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/goteam/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.2dcef1bb.chunk.css.map": "/goteam/static/css/main.2dcef1bb.chunk.css.map",
+    "static/js/2.4363574c.chunk.js.LICENSE.txt": "/goteam/static/js/2.4363574c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cf49e28.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.4363574c.chunk.js",
+    "static/css/main.2dcef1bb.chunk.css",
+    "static/js/main.2d6c8750.chunk.js"
+  ]
+}
