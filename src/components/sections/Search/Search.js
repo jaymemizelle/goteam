@@ -4,8 +4,7 @@ import { Button, Form } from "react-bootstrap";
 import "./search.css";
 import SearchBar from "./SearchBar"
 
-function Search() {
-  const [searchTerm, setSearchTerm] = useState("");
+function Search({searchTerm, setSearchTerm}) {
   return (
     <div id="search">
       <h2 className="searchTitle">Search</h2>

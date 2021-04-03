@@ -19,7 +19,7 @@ function Header() {
         <p className="instructions">
           View your teammates' non sensitive data in the table below and use the search bar to filter which teammates you'd like to see! Go ahead. Try searching by the first and last name of your teammate to see who comes up! Have fun and remember not to take life too seriously. It isn't permanent!
         </p>
-        <Search/>
+        <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
         <TeamTable searchTerm={searchTerm}/>
       </div>
     </>

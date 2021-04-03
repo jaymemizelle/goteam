@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 
 function TeamTable({ searchTerm }) {
   const [teamMembers, setTeamMembers] = useState([]);
-
+  console.log(searchTerm);
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=50")
       .then((res) => res.json())
@@ -13,6 +13,15 @@ function TeamTable({ searchTerm }) {
         setTeamMembers(res.results);
       });
   }, []);
+
+  const contains = (str, match) =>
+    str.toLowerCase().indexOf(match.toLowerCase()) !== -1;
+
+  const handleFilter = ({ name, location }) =>
+    !searchTerm ||
+    contains(name.first, searchTerm) ||
+    contains(name.last, searchTerm) ||
+    contains(location.country, searchTerm);
 
   return (
     <>
@@ -31,9 +40,7 @@ function TeamTable({ searchTerm }) {
         </thead>
         <tbody>
           {teamMembers
-            .filter(
-              (e) => !searchTerm || e.name.first.indexOf(searchTerm) !== -1
-            )
+            .filter(handleFilter)
             .map(({ picture, name, email, location, timezone }, i) => (
               <MemberRow
                 i={i}
@@ -52,17 +59,19 @@ function TeamTable({ searchTerm }) {
 
 const MemberRow = ({ i, picture, name, email, location, timezone }) => {
   return (
-    <tr key={i}>
-      <td>{i}</td>
-      <td>
-        <img alt="team member" src={picture.thumbnail} />
-      </td>
-      <td>{name.first}</td>
-      <td>{name.last}</td>
-      <td>{email}</td>
-      <td>{location.country}</td>
-      <td>{location.timezone.offset}</td>
-    </tr>
+    < React.Fragment key={i}>
+      <tr>
+        <td>{i}</td>
+        <td>
+          <img alt="team member" src={picture.thumbnail} />
+        </td>
+        <td>{name.first}</td>
+        <td>{name.last}</td>
+        <td>{email}</td>
+        <td>{location.country}</td>
+        <td>{location.timezone.offset}</td>
+      </tr>
+      </React.Fragment>
   );
 };
 
