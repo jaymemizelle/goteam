@@ -24,7 +24,7 @@ Simply click on the link to the deployed application to search for teammates by 
 ![application-screenshot](./public/goTeam-screenshot.jpg)
 
 ## Deployment
-* Deployed Application URL: https://jaymemizelle.github.io/goteam/
+* Deployed Application URL: https://theprivacydev.github.io/goteam/
 
 ## Technologies
 * JavaScript 
